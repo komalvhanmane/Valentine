@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Alone Matchmaker 💔</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Forever Alone Matchmaker 💔</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="match.html">Find a Match</a></li>
+            <li><a href="excuses.html">Excuses</a></li>
+            <li><a href="therapy.html">Therapist Mode</a></li>
+            <li><a href="breakup.html">Breakup Mode</a></li>
+            <li><button onclick="toggleDarkMode()">🌙</button></li>
+        </ul>
+    </nav>
+
+    <section id="break-mode">
+        <button onclick="breakMode()" type="button">Enter Break Mode</button>
+
+        <h2>Break Mode Activated 💔</h2>
+
+        <div class="video-container">
+            <video width="30%" height="30%" id="break-video" autoplay playsinline loop muted>
+                <source src="VID20250103184958.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <audio id="break-audio">
+            <source src="https://www.myinstants.com/media/sounds/sad-violin.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+
+        <button class="skip-button" onclick="exitBreakMode()">Skip Break</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

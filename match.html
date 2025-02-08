@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Alone Matchmaker 💔</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Forever Alone Matchmaker 💔</h1>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="match.html">Find a Match</a></li>
+            <li><a href="excuses.html">Excuses</a></li>
+            <li><a href="therapy.html">Therapist Mode</a></li>
+            <li><a href="breakup.html">Breakup Mode</a></li>
+            <li><button onclick="toggleDarkMode()">🌙</button></li>
+        </ul>
+    </nav>
+
+    <!-- Find a Match Section -->
+    <section id="match">
+        <h2>Find Your Match 💘</h2>
+        <button onclick="findMatch()">Find My Match</button>
+        <div id="loading">💘 Searching for love... 💘</div>
+        <div id="result"></div>
+        <img id="match-img" width="30%" src="match1.jpg" alt="">
+    </section>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
